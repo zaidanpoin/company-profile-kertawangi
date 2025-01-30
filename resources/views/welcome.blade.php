@@ -10,14 +10,14 @@
 <body>
 
 
-    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+    <nav class="bg-white border-gray-200 ">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+                <span class="self-center text-2xl font-semibold whitespace-nowrap ">Flowbite</span>
             </a>
             <button data-collapse-toggle="navbar-default" type="button"
-                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
                 aria-controls="navbar-default" aria-expanded="false">
                 <span class="sr-only">Open main menu</span>
                 <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -38,29 +38,29 @@
                     });
                 </script>
                 <ul
-                    class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white ">
                     <li>
                         <a href="#"
-                            class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                            class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
                             aria-current="page">Home</a>
                     </li>
                     <li>
                         <a href="#"
-                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:bg-transparent">About</a>
                     </li>
                     <li>
                         <a href="#"
-                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:bg-transparent">About</a>
                     </li>
                     <li>
                         <a href="#"
-                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
+                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:bg-transparent">About</a>
                     </li>
                     <li>
                         <a href="#"
-                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Contact</a>
                     </li>
-                </ul>
+                    </uldark>
             </div>
         </div>
     </nav>
@@ -100,9 +100,9 @@
     </section>
 
     <section class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
-        <h2 class="mb-4 text-3xl font-extrabold tracking-tight leading-tight text-gray-900 dark:text-white md:text-4xl">
+        <h2 class="mb-4 text-3xl font-extrabold tracking-tight leading-tight text-gray-900 md:text-4xl">
             Tentang Desa Kertawangi</h2>
-        <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400">
+        <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
             Desa Kertawangi adalah sebuah desa yang terletak di kaki Gunung Tangkuban Perahu. Desa ini dikenal dengan
             keindahan alamnya yang mempesona dan udara yang sejuk. Masyarakat desa ini hidup dengan damai dan saling
             membantu satu sama lain.
@@ -113,7 +113,7 @@
                 Pelajari Lebih Lanjut
             </a>
             <a href="#"
-                class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">
+                class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-200  ">
                 Hubungi Kami
             </a>
         </div>
@@ -128,14 +128,14 @@
             </div>
             <div class="lg:w-2/3 mb-8 lg:mb-0">
                 <h2
-                    class="mb-4 text-3xl font-extrabold tracking-tight leading-tight text-gray-900 dark:text-white md:text-4xl">
+                    class="mb-4 text-3xl font-extrabold tracking-tight leading-tight text-gray-900 md:text-4xl">
                     Sambutan Kepala Desa</h2>
 
-                <p class=" text-2xl font-semibold text-gray-900 dark:text-white">Steve Ewon</p>
+                <p class=" text-2xl font-semibold text-gray-900 ">Steve Ewon</p>
 
-                <p class="mb-4 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Kepala Desa Kertawangi
+                <p class="mb-4 text-lg font-normal text-gray-500 lg:text-xl ">Kepala Desa Kertawangi
 
-                <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
+                <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl ">
                     Selamat datang di Desa Kertawangi. Kami bangga menyambut Anda di desa kami yang indah dan penuh
                     dengan
                     keramahan. Kami berharap Anda menikmati kunjungan Anda dan merasakan kehangatan dari masyarakat
@@ -148,10 +148,10 @@
 
 
     <section class="py-8 border-2 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-12">
-        <h2 class="mb-4 text-3xl font-extrabold tracking-tight leading-tight text-gray-900 dark:text-white md:text-4xl">
+        <h2 class="mb-4 text-3xl font-extrabold tracking-tight leading-tight text-gray-900 md:text-4xl">
             Peta Desa Kertawangi</h2>
 
-        <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
+        <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl">
             Berikut adalah peta Desa Kertawangi yang dapat membantu Anda menemukan lokasi kami dengan mudah. Gunakan
             peta interaktif di bawah ini untuk menjelajahi desa kami dan menemukan tempat-tempat menarik yang ada di
             sekitar.
@@ -169,55 +169,55 @@
 
     {{-- struktu --}}
     <section class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-12">
-        <h2 class="mb-4 text-3xl font-extrabold tracking-tight leading-tight text-gray-900 dark:text-white md:text-4xl">
+        <h2 class="mb-4 text-3xl font-extrabold tracking-tight leading-tight text-gray-900 md:text-4xl">
             Struktur Organisasi Desa Kertawangi</h2>
         <div class="grid gap-8 lg:grid-cols-3">
-            <div class="bg-white rounded-lg shadow-lg dark:bg-gray-800">
+            <div class="bg-white rounded-lg shadow-lg ">
                 <img src="{{ asset('assets/adzana_shaliha.webp') }}" alt="Kepala Desa"
                     class="w-full h-100 object-contain rounded-t-lg">
                 <div class="p-6">
-                    <h3 class="mb-2 text-xl font-bold text-gray-900 dark:text-white">Kepala Desa</h3>
-                    <p class="text-gray-700 dark:text-gray-400">Steve Ewon</p>
+                    <h3 class="mb-2 text-xl font-bold text-gray-900 ">Kepala Desa</h3>
+                    <p class="text-gray-700 ">Steve Ewon</p>
                 </div>
             </div>
-            <div class="bg-white rounded-lg shadow-lg dark:bg-gray-800">
+            <div class="bg-white rounded-lg shadow-lg ">
                 <img src="{{ asset('assets/adeline_wijaya.webp') }}" alt="Sekretaris Desa"
                     class="w-full h-100 object-contain rounded-t-lg">
                 <div class="p-6">
-                    <h3 class="mb-2 text-xl font-bold text-gray-900 dark:text-white">Sekretaris Desa</h3>
-                    <p class="text-gray-700 dark:text-gray-400">Jane Doe</p>
+                    <h3 class="mb-2 text-xl font-bold text-gray-900 ">Sekretaris Desa</h3>
+                    <p class="text-gray-700 ">Jane Doe</p>
                 </div>
             </div>
-            <div class="bg-white rounded-lg shadow-lg dark:bg-gray-800">
+            <div class="bg-white rounded-lg shadow-lg ">
                 <img src="{{ asset('assets/freya_jayawardana.webp') }}" alt="Sekretaris Desa"
                     class="w-full h-100 object-contain rounded-t-lg">
                 <div class="p-6">
-                    <h3 class="mb-2 text-xl font-bold text-gray-900 dark:text-white">Sekretaris Desa</h3>
-                    <p class="text-gray-700 dark:text-gray-400">Jane Doe</p>
+                    <h3 class="mb-2 text-xl font-bold text-gray-900 ">Sekretaris Desa</h3>
+                    <p class="text-gray-700 ">Jane Doe</p>
                 </div>
             </div>
-            <div class="bg-white rounded-lg shadow-lg dark:bg-gray-800">
+            <div class="bg-white rounded-lg shadow-lg ">
                 <img src="{{ asset('assets/flora_shafiq.webp') }}" alt="Sekretaris Desa"
                     class="w-full h-100 object-contain rounded-t-lg">
                 <div class="p-6">
-                    <h3 class="mb-2 text-xl font-bold text-gray-900 dark:text-white">Sekretaris Desa</h3>
-                    <p class="text-gray-700 dark:text-gray-400">Jane Doe</p>
+                    <h3 class="mb-2 text-xl font-bold text-gray-900 ">Sekretaris Desa</h3>
+                    <p class="text-gray-700 ">Jane Doe</p>
                 </div>
             </div>
-            <div class="bg-white rounded-lg shadow-lg dark:bg-gray-800">
+            <div class="bg-white rounded-lg shadow-lg ">
                 <img src="{{ asset('assets/yessica_tamara.webp') }}" alt="Sekretaris Desa"
                     class="w-full h-100 object-contain rounded-t-lg">
                 <div class="p-6">
-                    <h3 class="mb-2 text-xl font-bold text-gray-900 dark:text-white">Sekretaris Desa</h3>
-                    <p class="text-gray-700 dark:text-gray-400">Jane Doe</p>
+                    <h3 class="mb-2 text-xl font-bold text-gray-900 ">Sekretaris Desa</h3>
+                    <p class="text-gray-700 ">Jane Doe</p>
                 </div>
             </div>
-            <div class="bg-white rounded-lg shadow-lg dark:bg-gray-800">
+            <div class="bg-white rounded-lg shadow-lg ">
                 <img src="{{ asset('assets/aisa_maharani.webp') }}" alt="Sekretaris Desa"
                     class="w-full h-100 object-contain rounded-t-lg">
                 <div class="p-6">
-                    <h3 class="mb-2 text-xl font-bold text-gray-900 dark:text-white">Sekretaris Desa</h3>
-                    <p class="text-gray-700 dark:text-gray-400">Jane Doe</p>
+                    <h3 class="mb-2 text-xl font-bold text-gray-900 ">Sekretaris Desa</h3>
+                    <p class="text-gray-700 ">Jane Doe</p>
                 </div>
             </div>
 
@@ -269,49 +269,47 @@
     {{-- end  --}}
 
     {{-- admintiastari --}}
-    <section class="bg-white dark:bg-gray-900">
+    <section class="bg-gray-900">
         <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
-            <h2
-                class="mb-4 text-3xl font-extrabold tracking-tight leading-tight text-gray-900 dark:text-white md:text-4xl">
+            <h2 class="mb-4 text-3xl font-extrabold tracking-tight leading-tight text-white md:text-4xl">
                 Administrasi Penduduk
             </h2>
-            <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
+            <p class="mb-8 text-lg font-normal text-gray-400 lg:text-xl">
                 Administrasi penduduk Desa Kertawangi mencakup berbagai layanan seperti pendaftaran penduduk, pencatatan
                 sipil, dan pengelolaan data kependudukan. Kami berkomitmen untuk memberikan pelayanan terbaik bagi
                 masyarakat desa.
             </p>
 
-
-            <dl class="grid max-w-screen-md gap-8 mx-auto text-gray-900 sm:grid-cols-3 dark:text-white">
+            <dl class="grid max-w-screen-md gap-8 mx-auto text-white sm:grid-cols-3">
                 <div class="flex flex-col items-center justify-center">
                     <dt class="mb-2 text-3xl md:text-4xl counter font-extrabold" data-target="1000">0</dt>
-                    <dd class="font-light text-gray-500 dark:text-gray-400">Penduduk</dd>
+                    <dd class="font-light text-gray-400">Penduduk</dd>
                 </div>
                 <div class="flex flex-col items-center justify-center">
                     <dt class="mb-2 text-3xl md:text-4xl counter font-extrabold" data-target="300">0</dt>
-                    <dd class="font-light text-gray-500 dark:text-gray-400">Kepala Keluarga</dd>
+                    <dd class="font-light text-gray-400">Kepala Keluarga</dd>
                 </div>
                 <div class="flex flex-col items-center justify-center">
                     <dt class="mb-2 text-3xl md:text-4xl counter font-extrabold" data-target="10">0</dt>
-                    <dd class="font-light text-gray-500 dark:text-gray-400">Penduduk Sementara</dd>
+                    <dd class="font-light text-gray-400">Penduduk Sementara</dd>
                 </div>
                 <div class="flex flex-col items-center justify-center">
                     <dt class="mb-2 text-3xl md:text-4xl counter font-extrabold" data-target="550">0</dt>
-                    <dd class="font-light text-gray-500 dark:text-gray-400">Laki-laki</dd>
+                    <dd class="font-light text-gray-400">Laki-laki</dd>
                 </div>
                 <div class="flex flex-col items-center justify-center">
                     <dt class="mb-2 text-3xl md:text-4xl counter font-extrabold" data-target="450">0</dt>
-                    <dd class="font-light text-gray-500 dark:text-gray-400">Perempuan</dd>
+                    <dd class="font-light text-gray-400">Perempuan</dd>
                 </div>
                 <div class="flex flex-col items-center justify-center">
                     <dt class="mb-2 text-3xl md:text-4xl counter font-extrabold" data-target="30">0</dt>
-                    <dd class="font-light text-gray-500 dark:text-gray-400">Mutasi Penduduk</dd>
+                    <dd class="font-light text-gray-400">Mutasi Penduduk</dd>
                 </div>
             </dl>
         </div>
     </section>
     {{-- end --}}
-
+    
 
 
     </section>
@@ -354,6 +352,36 @@
             });
         });
     </script>
+
+
+
+<footer class="bg-white border-gray-200">
+    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap ">Flowbite</span>
+            </a>
+            <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 ">
+                <li>
+                    <a href="#" class="hover:underline me-4 md:me-6">About</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+        <span class="block text-sm text-gray-500 sm:text-center ">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.</span>
+    </div>
+</footer>
+
 
 
 </body>
