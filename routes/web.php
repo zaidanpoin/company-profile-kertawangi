@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\AnggotaOrganisasi;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +15,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $anggotaOrganisasi = AnggotaOrganisasi::take(10)->get();
+    return view('welcome',['anggotaOrganisasi' => $anggotaOrganisasi]);
 });
 
 Route::get('/navbar', function(){
