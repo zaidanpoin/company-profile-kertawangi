@@ -18,3 +18,17 @@ Route::get('/', function () {
     $anggotaOrganisasi = AnggotaOrganisasi::take(10)->get();
     return view('welcome',['anggotaOrganisasi' => $anggotaOrganisasi]);
 });
+
+Route::get('/navbar', function(){
+    return views('navbar');
+    });
+
+    Route::get('/umkm', function(){
+        return view('umkm');
+        });
+
+Route::get('/about', function(){
+    return views('about');
+    });
+    
+
