@@ -75,7 +75,7 @@
 
 
     <section
-        class="bg-center bg-no-repeat bg-[url('https://www.antarafoto.com/id/view/2423210/program-big-farmer-di-desa-wisata-kertawangi')] bg-gray-700 bg-blend-multiply">
+        class="bg-center bg-no-repeat bg-[url('https://images.unsplash.com/photo-1735538568499-58951ebb79e0?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-gray-700 bg-blend-multiply">
         <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
             <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
                 Selamat Datang Di Desa Kertawangi</h1>
