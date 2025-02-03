@@ -4,10 +4,10 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-
+use Spatie\Permission\Traits\HasRoles;
 class Umkm extends Model
 {
-    use HasFactory;
+    use HasFactory,HasRoles;
 
 
     protected $table = 'umkm';
@@ -23,7 +23,7 @@ class Umkm extends Model
         'image2',
         'image3',
         'instangram_url',
-        'tiktok_url'
+        'tiktok_url','deskripsi'
     ];
 
 

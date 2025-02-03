@@ -14,7 +14,7 @@
     <nav class="bg-white border-gray-200 ">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-                {{-- <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" /> --}}
+                <img src="{{ asset('assets/logo.jpeg') }}" class="h-12 rounded-full" alt="Flowbite Logo" />
                 <span class="self-center text-2xl font-semibold whitespace-nowrap ">Desa kertawangi</span>
             </a>
             <button data-collapse-toggle="navbar-default" type="button"
@@ -75,8 +75,9 @@
 
 
     <section
-        class="bg-center bg-no-repeat bg-[url('https://www.antarafoto.com/id/view/2423210/program-big-farmer-di-desa-wisata-kertawangi')] bg-gray-700 bg-blend-multiply">
+        class="bg-center bg-no-repeat bg-[url('https://images.unsplash.com/photo-1735538568499-58951ebb79e0?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-gray-700 bg-blend-multiply">
         <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+
             <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
                 Selamat Datang Di Desa Kertawangi</h1>
             <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Lorem ipsum dolor sit amet

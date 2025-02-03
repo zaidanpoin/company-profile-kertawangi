@@ -18,7 +18,7 @@ class UmkmResource extends Resource
     protected static ?string $model = Umkm::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-building-storefront';
-    protected static ?string $navigationLabel = 'UMKM';
+
 
     public static function form(Form $form): Form
     {
@@ -28,6 +28,9 @@ class UmkmResource extends Resource
                     ->required()
                     ->maxLength(255),
                 Forms\Components\TextInput::make('alamat')
+                    ->required()
+                    ->maxLength(255),
+                Forms\Components\Textarea::make('deskripsi')
                     ->required()
                     ->maxLength(255),
                 Forms\Components\TextInput::make('nama_pemilik')
@@ -70,6 +73,8 @@ class UmkmResource extends Resource
                 Tables\Columns\TextColumn::make('nama_umkm')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('alamat')
+                    ->searchable(),
+                    Tables\Columns\TextColumn::make('deskripsi')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('nama_pemilik')
                     ->searchable(),
