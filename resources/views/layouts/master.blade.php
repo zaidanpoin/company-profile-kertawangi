@@ -14,7 +14,7 @@
     <nav class="bg-white shadow-2xl border-gray-200 ">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-                {{-- <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" /> --}}
+                <img src="{{ asset('assets/logo.jpeg') }}" class="h-12 rounded-full" alt="Flowbite Logo" />
                 <span class="self-center text-2xl font-semibold whitespace-nowrap ">Desa kertawangi</span>
             </a>
             <button data-collapse-toggle="navbar-default" type="button"
