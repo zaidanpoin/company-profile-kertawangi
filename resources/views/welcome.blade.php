@@ -233,32 +233,31 @@
 
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
 
-                <div class="rounded-lg shadow-md">
-                    <img src="{{ asset('assets/download.jpg') }}" alt="Kegiatan makan bersama"
-                        class="rounded-lg h-full w-full">
-                </div>
+
 
                 <div class="rounded-lg shadow-md">
-                    <img src="{{ asset('assets/Teater_JKT48_2023.jpg') }}" alt="Kegiatan pelatihan"
+                    <img src="{{ Storage::url('public/' . $galeri[0]['gambar1']) }}" alt="Kegiatan makan bersama"
                         class="rounded-lg h-full w-full">
                 </div>
                 <div class="rounded-lg shadow-md">
-                    <img src="{{ asset('assets/357148367_291028680057163_8862263702458317789_n-18520740.webp') }}"
-                        alt="Kegiatan pelatihan" class="rounded-lg w-full">
+                    <img src="{{ Storage::url('public/' . $galeri[0]['gambar2']) }}" alt="Kegiatan pelatihan"
+                        class="rounded-lg w-full">
                 </div>
-
                 <div class="rounded-lg shadow-md">
-                    <img src="{{ asset('assets/download.jpg') }}" alt="Kegiatan makan bersama"
-                        class="rounded-lg h-full w-full">
-                </div>
-
-                <div class="rounded-lg shadow-md">
-                    <img src="{{ asset('assets/Teater_JKT48_2023.jpg') }}" alt="Kegiatan pelatihan"
+                    <img src="{{ Storage::url('public/' . $galeri[0]['gambar3']) }}" alt="Kegiatan makan bersama"
                         class="rounded-lg h-full w-full">
                 </div>
                 <div class="rounded-lg shadow-md">
-                    <img src="{{ asset('assets/357148367_291028680057163_8862263702458317789_n-18520740.webp') }}"
-                        alt="Kegiatan pelatihan" class="rounded-lg w-full">
+                    <img src="{{ Storage::url('public/' . $galeri[0]['gambar4']) }}" alt="Kegiatan pelatihan"
+                        class="rounded-lg h-full w-full">
+                </div>
+                <div class="rounded-lg shadow-md">
+                    <img src="{{ Storage::url('public/' . $galeri[0]['gambar5']) }}" alt="Kegiatan pelatihan"
+                        class="rounded-lg w-full">
+                </div>
+                <div class="rounded-lg shadow-md">
+                    <img src="{{ Storage::url('public/' . $galeri[0]['gambar6']) }}" alt="Kegiatan pelatihan"
+                        class="rounded-lg w-full">
                 </div>
 
             </div>

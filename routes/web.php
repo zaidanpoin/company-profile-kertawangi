@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Models\AnggotaOrganisasi;
 use App\Models\Administrasi;
+use App\Models\Galeri;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,7 +18,8 @@ use App\Models\Administrasi;
 Route::get('/', function () {
     $anggotaOrganisasi = AnggotaOrganisasi::take(10)->get();
     $administrasi = Administrasi::take(1)->get()->toArray();
-    return view('welcome',['anggotaOrganisasi' => $anggotaOrganisasi,'administrasi'=>$administrasi]);
+    $galeri = Galeri::take(1)->get()->toArray();
+    return view('welcome',['galeri'=>$galeri,'anggotaOrganisasi' => $anggotaOrganisasi,'administrasi'=>$administrasi]);
 });
 
 Route::get('/navbar', function(){
