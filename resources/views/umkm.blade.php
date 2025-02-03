@@ -2,8 +2,11 @@
 
 
 @section('content')
+
 <div class="max-w-screen-xl mx-auto p-4 border-2">
+<h1 class="text-3xl font-bold mb-4">List Umkm Kertawangi</h1>
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            
                             <div class="bg-white rounded-lg shadow-2xl overflow-hidden">
                                 <img class="w-full h-70 object-cover " src="{{ asset('assets/adeline_wijaya.webp') }}" alt="Blog Image">
                                 <div class="p-4">

@@ -28,7 +28,7 @@ Route::get('/navbar', function(){
         });
 
 Route::get('/about', function(){
-    return views('about');
+    return view('about');
     });
     
 
