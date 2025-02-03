@@ -21,7 +21,24 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'avatar_url',
     ];
+
+
+    public function getFilamentAvatarUrl(): ?string
+    {
+        $avatarColumn = config('filament-edit-profile.avatar_column', 'avatar_url');
+        return $this->$avatarColumn ? Storage::url("$this->$avatarColumn") : null;
+    }
+
+    public function shouldShowAvatarForm(): array
+    {
+        return [
+            'value' => true,
+            'directory' => 'avatars', // image will be stored in 'storage/app/public/avatars'
+            'rules' => 'mimes:jpeg,png|max:1024' // only accept jpeg and png files with a maximum size of 1MB
+        ];
+    }
 
     /**
      * The attributes that should be hidden for serialization.
