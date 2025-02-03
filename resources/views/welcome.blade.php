@@ -189,27 +189,33 @@
 
             <dl class="grid max-w-screen-md gap-8 mx-auto text-white sm:grid-cols-3">
                 <div class="flex flex-col items-center justify-center">
-                    <dt class="mb-2 text-3xl md:text-4xl counter font-extrabold" data-target="1000">0</dt>
+                    <dt class="mb-2 text-3xl md:text-4xl counter font-extrabold"
+                        data-target="{{ $administrasi[0]['penduduk'] }}">0</dt>
                     <dd class="font-light text-gray-400">Penduduk</dd>
                 </div>
                 <div class="flex flex-col items-center justify-center">
-                    <dt class="mb-2 text-3xl md:text-4xl counter font-extrabold" data-target="300">0</dt>
+                    <dt class="mb-2 text-3xl md:text-4xl counter font-extrabold"
+                        data-target="{{ $administrasi[0]['kepala_keluarga'] }}">0</dt>
                     <dd class="font-light text-gray-400">Kepala Keluarga</dd>
                 </div>
                 <div class="flex flex-col items-center justify-center">
-                    <dt class="mb-2 text-3xl md:text-4xl counter font-extrabold" data-target="10">0</dt>
+                    <dt class="mb-2 text-3xl md:text-4xl counter font-extrabold"
+                        data-target="{{ $administrasi[0]['penduduk_sementara'] }}">0</dt>
                     <dd class="font-light text-gray-400">Penduduk Sementara</dd>
                 </div>
                 <div class="flex flex-col items-center justify-center">
-                    <dt class="mb-2 text-3xl md:text-4xl counter font-extrabold" data-target="550">0</dt>
+                    <dt class="mb-2 text-3xl md:text-4xl counter font-extrabold"
+                        data-target="{{ $administrasi[0]['laki_laki'] }}">0</dt>
                     <dd class="font-light text-gray-400">Laki-laki</dd>
                 </div>
                 <div class="flex flex-col items-center justify-center">
-                    <dt class="mb-2 text-3xl md:text-4xl counter font-extrabold" data-target="450">0</dt>
+                    <dt class="mb-2 text-3xl md:text-4xl counter font-extrabold"
+                        data-target="{{ $administrasi[0]['perempuan'] }}">0</dt>
                     <dd class="font-light text-gray-400">Perempuan</dd>
                 </div>
                 <div class="flex flex-col items-center justify-center">
-                    <dt class="mb-2 text-3xl md:text-4xl counter font-extrabold" data-target="30">0</dt>
+                    <dt class="mb-2 text-3xl md:text-4xl counter font-extrabold"
+                        data-target="{{ $administrasi[0]['mutasi_penduduk'] }}">0</dt>
                     <dd class="font-light text-gray-400">Mutasi Penduduk</dd>
                 </div>
             </dl>

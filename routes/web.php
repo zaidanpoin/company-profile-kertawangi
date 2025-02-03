@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Models\AnggotaOrganisasi;
-
+use App\Models\Administrasi;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,7 +16,8 @@ use App\Models\AnggotaOrganisasi;
 
 Route::get('/', function () {
     $anggotaOrganisasi = AnggotaOrganisasi::take(10)->get();
-    return view('welcome',['anggotaOrganisasi' => $anggotaOrganisasi]);
+    $administrasi = Administrasi::take(1)->get()->toArray();
+    return view('welcome',['anggotaOrganisasi' => $anggotaOrganisasi,'administrasi'=>$administrasi]);
 });
 
 Route::get('/navbar', function(){
@@ -30,5 +31,5 @@ Route::get('/navbar', function(){
 Route::get('/about', function(){
     return view('about');
     });
-    
+
 
