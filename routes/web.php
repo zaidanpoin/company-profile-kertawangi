@@ -34,4 +34,6 @@ Route::get('/about', function(){
     return view('about');
     });
 
-
+    Route::get('/berita', function(){
+        return view('berita');
+        });
