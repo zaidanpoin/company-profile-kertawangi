@@ -156,7 +156,7 @@
     {{-- struktu --}}
 
     <section class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-12 ">
-        <h2 class="mb-4 text-3xl font-extrabold tracking-tight leading-tight text-gray-900 md:text-4xl">
+        <h2 class="mb-4 text-3xl font-extrabold test tracking-tight leading-tight text-gray-900 md:text-4xl">
             Struktur Organisasi Desa Kertawangi</h2>
 
         <div class="md:grid md:gap-8 lg:grid-cols-3 hidden md:block">
