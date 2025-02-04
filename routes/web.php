@@ -37,3 +37,7 @@ Route::get('/about', function(){
     Route::get('/berita', function(){
         return view('berita');
         });
+
+        Route::get('/detailberita', function(){
+            return view('detailberita');
+            });
