@@ -155,23 +155,68 @@
 
     {{-- struktu --}}
 
-    <section class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-12">
+    <section class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-12 ">
         <h2 class="mb-4 text-3xl font-extrabold tracking-tight leading-tight text-gray-900 md:text-4xl">
             Struktur Organisasi Desa Kertawangi</h2>
 
-        <div class="grid gap-8 lg:grid-cols-3">
+        <div class="md:grid md:gap-8 lg:grid-cols-3 hidden md:block">
             @foreach ($anggotaOrganisasi as $item)
-                <div class="bg-white rounded-lg shadow-lg ">
+                <div class="bg-white rounded-lg shadow-lg">
                     <img src="{{ Storage::url('public/' . $item->images) }}" alt="Kepala Desa"
                         class="w-full h-100 object-contain rounded-t-lg">
                     <div class="p-6">
-                        <h3 class="mb-2 text-xl font-bold text-gray-900 ">{{ $item->jabatan }}</h3>
-                        <p class="text-gray-700 ">{{ $item->nama }}</p>
+                        <h3 class="mb-2 text-xl font-bold text-gray-900">{{ $item->jabatan }}</h3>
+                        <p class="text-gray-700">{{ $item->nama }}</p>
                     </div>
                 </div>
             @endforeach
-
         </div>
+        <div class="swiper-container md:hidden">
+            <div class="swiper-wrapper">
+                @foreach ($anggotaOrganisasi as $item)
+                    <div class="swiper-slide">
+                        <div class="bg-white rounded-lg shadow-lg">
+                            <img src="{{ Storage::url('public/' . $item->images) }}" alt="Kepala Desa"
+                                class="w-full h-100 object-contain rounded-t-lg">
+                            <div class="p-6">
+                                <h3 class="mb-2 text-xl font-bold text-gray-900">{{ $item->jabatan }}</h3>
+                                <p class="text-gray-700">{{ $item->nama }}</p>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const swiper = new Swiper('.swiper-container', {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                    breakpoints: {
+                        640: {
+                            slidesPerView: 2,
+                            spaceBetween: 20,
+                        },
+                        768: {
+                            slidesPerView: 3,
+                            spaceBetween: 30,
+                        },
+                        1024: {
+                            slidesPerView: 3,
+                            spaceBetween: 40,
+                        },
+                    },
+                });
+            });
+        </script>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     </section>
 
     {{-- end struktur --}}
@@ -237,27 +282,27 @@
 
                 <div class="rounded-lg shadow-md">
                     <img src="{{ Storage::url('public/' . $galeri[0]['gambar1']) }}" alt="Kegiatan makan bersama"
-                        class="rounded-lg h-full w-full">
+                        class="rounded-lg h-70 w-full object-cover">
                 </div>
                 <div class="rounded-lg shadow-md">
                     <img src="{{ Storage::url('public/' . $galeri[0]['gambar2']) }}" alt="Kegiatan pelatihan"
-                        class="rounded-lg w-full">
+                        class="rounded-lg h-70 w-full object-cover">
                 </div>
                 <div class="rounded-lg shadow-md">
                     <img src="{{ Storage::url('public/' . $galeri[0]['gambar3']) }}" alt="Kegiatan makan bersama"
-                        class="rounded-lg h-full w-full">
+                        class="rounded-lg h-70 w-full object-cover">
                 </div>
                 <div class="rounded-lg shadow-md">
                     <img src="{{ Storage::url('public/' . $galeri[0]['gambar4']) }}" alt="Kegiatan pelatihan"
-                        class="rounded-lg h-full w-full">
+                        class="rounded-lg h-70 w-full object-cover">
                 </div>
                 <div class="rounded-lg shadow-md">
                     <img src="{{ Storage::url('public/' . $galeri[0]['gambar5']) }}" alt="Kegiatan pelatihan"
-                        class="rounded-lg w-full">
+                        class="rounded-lg h-70 w-full object-cover">
                 </div>
                 <div class="rounded-lg shadow-md">
                     <img src="{{ Storage::url('public/' . $galeri[0]['gambar6']) }}" alt="Kegiatan pelatihan"
-                        class="rounded-lg w-full">
+                        class="rounded-lg h-70 w-full object-cover">
                 </div>
 
             </div>
