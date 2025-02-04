@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Models\AnggotaOrganisasi;
 use App\Models\Administrasi;
 use App\Models\Galeri;
+use App\Http\Controllers\WisataController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,21 +21,27 @@ Route::get('/', function () {
     $anggotaOrganisasi = AnggotaOrganisasi::take(10)->get();
     $administrasi = Administrasi::take(1)->get()->toArray();
     $galeri = Galeri::take(1)->get()->toArray();
-    return view('welcome',['galeri'=>$galeri,'anggotaOrganisasi' => $anggotaOrganisasi,'administrasi'=>$administrasi]);
+    return view('welcome', [
+        'galeri' => $galeri,
+        'anggotaOrganisasi' => $anggotaOrganisasi,
+        'administrasi' => $administrasi
+    ]);
 });
 
-Route::get('/navbar', function(){
-    return views('navbar');
-    });
+Route::get('/navbar', function () {
+    return view('navbar');
+});
 
-    Route::get('/umkm', function(){
-        return view('umkm');
-        });
+Route::get('/umkm', function () {
+    return view('umkm');
+});
 
-Route::get('/about', function(){
+Route::get('/wisata', [WisataController::class, 'index']);
+
+Route::get('/about', function () {
     return view('about');
-    });
+});
 
-    Route::get('/berita', function(){
-        return view('berita');
-        });
+Route::get('/berita', function () {
+    return view('berita');
+});
