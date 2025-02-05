@@ -12,7 +12,7 @@
         <!-- Header Section -->
         <header class="bg-green-700 text-white py-6">
             <div class="container mx-auto text-center">
-                <h1 class="text-4xl font-bold">Tentang Desa Kami</h1>
+                <h1 class="text-4xl font-bold">Tentang Desa Kertawangi</h1>
                 <p class="mt-2 text-lg">Mengenal lebih dekat desa kami yang indah dan penuh keramahan.</p>
             </div>
         </header>
@@ -27,7 +27,7 @@
 
                 <!-- Right Column: Description -->
                 <div class="space-y-6">
-                    <h2 class="text-3xl font-bold text-green-800">Selamat Datang di Desa Kami</h2>
+                    <h2 class="text-3xl font-bold text-green-800">Selamat Datang di Desa Kertawangi</h2>
                     <p class="text-gray-700 leading-relaxed">
                         Desa kami terletak di tengah alam yang asri, dikelilingi oleh perbukitan dan sawah hijau yang luas.
                         Kami bangga dengan warisan budaya dan tradisi yang masih terjaga hingga saat ini.

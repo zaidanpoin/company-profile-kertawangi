@@ -83,20 +83,16 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <!-- Kolom 1: Logo dan Nama Desa -->
                 <div>
-                    <div class="flex gap-4">
+                    <div class="flex items-center gap-4">
                         <div class=""><img src="{{ asset('assets/logodesa.png') }}" alt="Logo Desa"
-                                class="w-20 h-20 mb-4"></div>
+                                class="w-26 h-28 mb-4"></div>
                         <div class="">
-                            <h3 class="text-xl font-bold mb-2">Desa Sukamaju</h3>
-                            <p class="text-sm">Kecamatan Cilengkrang</p>
-                            <p class="text-sm">Kabupaten Bandung</p>
+                            <h3 class="text-xl font-bold mb-2">Desa Kertawangi</h3>
+                            <p class="text-sm">Kecamatan Cisarua</p>
+                            <p class="text-sm">Kabupaten Bandung Barat</p>
                             <p class="text-sm">Provinsi Jawa Barat</p>
-                        </div>
-                    </div>
 
-
-
-                    <!-- Media Sosial -->
+                            <!-- Media Sosial -->
                     <div class="flex space-x-4 mt-4">
                         <a href="#" class="text-white hover:text-green-300 transition duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor"
@@ -120,6 +116,10 @@
                             </svg>
                         </a>
                     </div>
+
+                        </div>
+                    </div>
+
                 </div>
 
                 <!-- Kolom 2: Kontak Desa -->
@@ -140,7 +140,7 @@
                                 <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                                 <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                             </svg>
-                            <span>desasukamaju@gmail.com</span>
+                            <span>desakertawangi@gmail.com</span>
                         </li>
                         <li class="flex items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20"
@@ -158,7 +158,7 @@
                                     d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
                                     clip-rule="evenodd" />
                             </svg>
-                            <span>Jl. Sukamaju No. 123, Bandung</span>
+                            <span>Jl. Kertawangi No. 123, Bandung</span>
                         </li>
                     </ul>
                 </div>
