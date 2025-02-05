@@ -14,7 +14,7 @@
     <nav class="bg-white shadow-2xl border-gray-200 ">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-                <img src="{{ asset('assets/logo.jpeg') }}" class="h-12 rounded-full" alt="Flowbite Logo" />
+                <img src="{{ asset('assets/logodesa.png') }}" class="h-12 rounded-full" alt="Flowbite Logo" />
                 <span class="self-center text-2xl font-semibold whitespace-nowrap ">Desa kertawangi</span>
             </a>
             <button data-collapse-toggle="navbar-default" type="button"
@@ -50,12 +50,16 @@
                             class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 md:dark:hover:bg-transparent">UMKM</a>
                     </li>
                     <li>
-                        <a href="{{ url('/about') }}"
-                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 md:dark:hover:bg-transparent">About</a>
-                    </li>
-                    <li>
                         <a href="{{ url('wisata') }}"
                             class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 md:dark:hover:bg-transparent">Wisata</a>
+                    </li>
+                    <li>
+                        <a href="{{ url('berita') }}"
+                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0">Berita</a>
+                    </li>
+                    <li>
+                        <a href="{{ url('/about') }}"
+                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 md:dark:hover:bg-transparent">About</a>
                     </li>
                     <li>
                         <a href="#"
@@ -80,7 +84,7 @@
                 <!-- Kolom 1: Logo dan Nama Desa -->
                 <div>
                     <div class="flex gap-4">
-                        <div class=""><img src="{{ asset('assets/logo.jpeg') }}" alt="Logo Desa"
+                        <div class=""><img src="{{ asset('assets/logodesa.png') }}" alt="Logo Desa"
                                 class="w-20 h-20 mb-4"></div>
                         <div class="">
                             <h3 class="text-xl font-bold mb-2">Desa Sukamaju</h3>
