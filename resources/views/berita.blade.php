@@ -5,9 +5,9 @@
     <div class="max-w-screen-xl mx-auto p-4 ">
         <div class="container mx-auto p-4">
 
-            <h2 class="text-4xl font-bold text-red-500 mb-4">Berita Desa</h2>
+            <h2 class="text-4xl font-bold text-green-800 mb-4">Berita Desa</h2>
             <p class="text-gray-700">Menyajikan informasi terbaru tentang peristiwa, berita terkini, dan artikel-artikel
-                jurnalistik dari Desa Kersik</p>
+                jurnalistik dari Desa Kertawangi</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
             @forelse ($berita as $data)
