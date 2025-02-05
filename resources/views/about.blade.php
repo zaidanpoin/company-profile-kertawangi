@@ -22,7 +22,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Left Column: Image -->
                 <div class="flex justify-center items-center">
-                    <img src="https://via.placeholder.com/500x300" alt="Desa Kami" class="rounded-lg shadow-lg">
+                    <img src="{{ asset('assets/desa.JPG') }}" alt="Desa Kami" class="rounded-lg shadow-lg">
                 </div>
 
                 <!-- Right Column: Description -->
@@ -38,10 +38,10 @@
                         kerajinan tangan, dan pariwisata. Kami mengundang Anda untuk berkunjung dan merasakan
                         pengalaman yang tak terlupakan di desa kami.
                     </p>
-                    <a href="#visi-misi"
+                    <!-- <a href="#visi-misi"
                         class="inline-block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition duration-300">
                         Baca Visi & Misi Kami
-                    </a>
+                    </a> -->
                 </div>
             </div>
 
@@ -67,6 +67,13 @@
                             <li>Membangun infrastruktur yang mendukung pertumbuhan desa.</li>
                             <li>Mendorong partisipasi aktif masyarakat dalam pembangunan desa.</li>
                         </ul>
+                    </div>
+                </div>
+                <!-- Struktur Organisasi Section -->
+                <div id="struktur-organisasi" class="mt-16">
+                    <h2 class="text-3xl font-bold text-green-800 text-center mb-8">Struktur Organisasi Desa</h2>
+                    <div class="flex justify-center items-center">
+                        <img src="{{ asset('assets/struktur_pemerintahan.png') }}" alt="Struktur Organisasi Desa" class="rounded-lg shadow-lg">
                     </div>
                 </div>
             </div>
