@@ -54,7 +54,17 @@ return [
             'visibility' => 'public',
 
         ],
+        'berita' => [
 
+            'driver' => 'local',
+
+            'root' => storage_path('app/public/uploads/berita'),
+
+            'url' => env('APP_URL').'/storage/uploads/berita',
+
+            'visibility' => 'public',
+
+        ],
 
         's3' => [
             'driver' => 's3',

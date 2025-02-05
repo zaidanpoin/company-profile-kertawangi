@@ -53,7 +53,7 @@ Route::get('/about', function () {
 
 
 Route::get('/berita', function(){
-    $berita = Berita::paginate(6);
+    $berita = Berita::orderBy('created_at', 'desc')->paginate(6);
         return view('berita',['berita'=>$berita]);
         });
 
