@@ -167,7 +167,7 @@
             @foreach ($anggotaOrganisasi as $item)
                 <div class="bg-white rounded-lg shadow-lg">
                     <img src="{{ Storage::url('public/' . $item->images) }}" alt="Kepala Desa"
-                        class="w-full h-100 object-contain rounded-t-lg">
+                        class="w-full h-100 object-cover rounded-t-lg">
                     <div class="p-6">
                         <h3 class="mb-2 text-xl font-bold text-gray-900">{{ $item->jabatan }}</h3>
                         <p class="text-gray-700">{{ $item->nama }}</p>

@@ -30,11 +30,11 @@ class BeritaResource extends Resource
                     ->maxLength(255),
                 Forms\Components\Hidden::make('user_id')
                     ->default(auth()->id()),
-                Forms\Components\TextInput::make('content')
-                    ->required()
-                    ->maxLength(255),
+                Forms\Components\RichEditor::make('content')
+                    ->required(),
                 Forms\Components\FileUpload::make('images')
                     ->required()
+                    ->directory('uploads/berita')
                   ,
             ]);
     }
