@@ -12,7 +12,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
             @forelse ($berita as $data)
                 <div class="bg-white rounded-lg shadow-2xl overflow-hidden">
-                    <img class="w-full h-70 object-cover " src="{{ Storage::url('public/' . $data->images) }}"
+                    <img class="w-full h-70 object-cover " src="{{ Storage::url('public/uploads/berita/' . $data->images) }}"
                         alt="Blog Image">
                     <div class="p-4">
 
