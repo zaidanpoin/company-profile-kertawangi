@@ -18,12 +18,15 @@ class UmkmResource extends Resource
     protected static ?string $model = Umkm::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-building-storefront';
-
+    protected static ?string $label = 'UMKM';
 
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
+                Forms\Components\TextInput::make('nama_produk')
+                        ->required()
+                        ->maxLength(255),
                 Forms\Components\TextInput::make('nama_umkm')
                     ->required()
                     ->maxLength(255),
@@ -44,7 +47,8 @@ class UmkmResource extends Resource
                 Forms\Components\FileUpload::make('thumbnail')
                     ->required()
                     ->image()
-                    ->maxSize(20480),
+                    ->maxSize(20480)
+                    ->directory('uploads/umkm'),
                 Forms\Components\FileUpload::make('gambar1')
                     ->image()
                     ->maxSize(20480)
@@ -63,6 +67,10 @@ class UmkmResource extends Resource
                 Forms\Components\TextInput::make('tiktok_url')
                     ->url()
                     ->maxLength(255),
+
+                    Forms\Components\TextInput::make('harga')
+                        ->required()
+                        ->numeric(),
             ]);
     }
 
@@ -70,6 +78,12 @@ class UmkmResource extends Resource
     {
         return $table
             ->columns([
+                Tables\Columns\TextColumn::make('nama_produk')
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('harga')
+                    ->numeric()
+                    ->sortable()
+                    ->formatStateUsing(fn (string $state): string => 'Rp ' . number_format($state, 0, ',', '.')),
                 Tables\Columns\TextColumn::make('nama_umkm')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('alamat')
