@@ -43,6 +43,18 @@ return [
             'visibility' => 'public',
             'throw' => false,
         ],
+       'struktur' => [
+
+            'driver' => 'local',
+
+            'root' => storage_path('app/public/uploads/struktur'),
+
+            'url' => env('APP_URL').'/storage/uploads/struktur',
+
+            'visibility' => 'public',
+
+        ],
+
 
         's3' => [
             'driver' => 's3',

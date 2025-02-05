@@ -12,6 +12,7 @@ use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Illuminate\Support\Facades\Storage;
 
 class AnggotaOrganisasiResource extends Resource
 {
@@ -30,7 +31,7 @@ class AnggotaOrganisasiResource extends Resource
                     ->required()
                     ->maxLength(255),
                 Forms\Components\FileUpload::make('images')
-                    ->required(),
+                    ->required()->disk('struktur'),
             ]);
     }
 
@@ -43,7 +44,8 @@ class AnggotaOrganisasiResource extends Resource
                 Tables\Columns\TextColumn::make('jabatan')
                     ->searchable(),
                 Tables\Columns\ImageColumn::make('images')
-                    ->disk('public')
+                    ->disk('struktur')
+
 
                     ->searchable(),
                 Tables\Columns\TextColumn::make('created_at')
@@ -60,6 +62,20 @@ class AnggotaOrganisasiResource extends Resource
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
+                Tables\Actions\DeleteAction::make()->after(function (AnggotaOrganisasi $record) {
+                    // delete single
+                    if ($record->images) {
+                        Storage::disk('struktur')->delete($record->images);
+                    }
+                    // delete multiple
+                    if (is_array($record->images)) {
+                        foreach ($record->images as $image) {
+                            Storage::disk('struktur')->delete($image);
+                        }
+                    }
+
+
+                }),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
@@ -74,9 +90,12 @@ class AnggotaOrganisasiResource extends Resource
             //
         ];
     }
-    // public static function canCreate(): bool{
-    //     return false;
-    // }
+
+
+    protected static function shouldDeleteImagesOnDelete(): bool
+    {
+        return true;
+    }
 
     public static function getPages(): array
     {
