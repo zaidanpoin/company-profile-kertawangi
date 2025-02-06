@@ -12,6 +12,7 @@ use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Illuminate\Support\Facades\Storage;
 
 class UmkmResource extends Resource
 {
@@ -48,19 +49,8 @@ class UmkmResource extends Resource
                     ->required()
                     ->image()
                     ->maxSize(20480)
-                    ->directory('uploads/umkm'),
-                Forms\Components\FileUpload::make('gambar1')
-                    ->image()
-                    ->maxSize(20480)
-                    ->acceptedFileTypes(['image/jpeg', 'image/png', 'image/webp']),
-                Forms\Components\FileUpload::make('image2')
-                    ->image()
-                    ->maxSize(20480)
-                    ->acceptedFileTypes(['image/jpeg', 'image/png', 'image/webp']),
-                Forms\Components\FileUpload::make('image3')
-                    ->image()
-                    ->maxSize(20480)
-                    ->acceptedFileTypes(['image/jpeg', 'image/png', 'image/webp']),
+                    ->disk('umkm'),
+
                 Forms\Components\TextInput::make('instagram_url')
                     ->url()
                     ->maxLength(255),
@@ -105,12 +95,7 @@ class UmkmResource extends Resource
                     ->toggleable(isToggledHiddenByDefault: true),
                 Tables\Columns\ImageColumn::make('thumbnail')
                     ->searchable(),
-                Tables\Columns\ImageColumn::make('image1')
-                    ->searchable(),
-                Tables\Columns\ImageColumn::make('image2')
-                    ->searchable(),
-                Tables\Columns\ImageColumn::make('image3')
-                    ->searchable(),
+
                 Tables\Columns\TextColumn::make('instagram_url')
 
                     ->searchable(),
@@ -123,6 +108,20 @@ class UmkmResource extends Resource
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
+                Tables\Actions\DeleteAction::make()->after(function (Umkm $record) {
+                    // delete single
+                    if ($record->thumbnail) {
+                        Storage::disk('umkm')->delete($record->thumbnail);
+                    }
+                    // delete multiple
+                    if (is_array($record->thumbnail)) {
+                        foreach ($record->thumbnail as $image) {
+                            Storage::disk('umkm')->delete($image);
+                        }
+                    }
+
+
+                })
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
