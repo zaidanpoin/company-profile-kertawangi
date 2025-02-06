@@ -78,6 +78,18 @@ return [
 
         ],
 
+        'galeri' => [
+
+            'driver' => 'local',
+
+            'root' => storage_path('app/public/uploads/galeri'),
+
+            'url' => env('APP_URL').'/storage/uploads/galeri',
+
+            'visibility' => 'public',
+
+        ],
+
         's3' => [
             'driver' => 's3',
             'key' => env('AWS_ACCESS_KEY_ID'),
