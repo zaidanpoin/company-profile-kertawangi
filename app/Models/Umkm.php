@@ -19,9 +19,7 @@ class Umkm extends Model
         'nama_pemilik',
         'nomor_telepon',
         'thumbnail',
-        'image1',
-        'image2',
-        'image3',
+
         'instangram_url',
         'tiktok_url','deskripsi','nama_produk','harga'
     ];

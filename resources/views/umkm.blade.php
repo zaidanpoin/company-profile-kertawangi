@@ -10,7 +10,7 @@
 
             @forelse ($umkm as $data)
                 <div class="bg-white rounded-lg shadow-2xl overflow-hidden">
-                    <img class="w-full h-70 object-cover" src="{{ Storage::url('public/' . $data->thumbnail) }}"
+                    <img class="w-full h-70 object-cover" src="{{ Storage::url('public/uploads/umkm/' . $data->thumbnail) }}"
                         alt="Blog Image">
                     <div class="p-4">
                         <h2 class="text-xl font-semibold mb-2">{{ $data->nama_produk }}-{{ $data->nama_umkm }}</h2>

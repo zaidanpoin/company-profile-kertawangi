@@ -5,13 +5,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     @vite('resources/css/app.css')
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <title>asdasd</title>
 </head>
+
 
 <body>
 
 
-    <nav class="bg-white border-gray-200 ">
+    <nav class="bg-white border-gray-200 fixed top-0 left-0 right-0 z-50">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="{{ asset('assets/logo.jpeg') }}" class="h-12 rounded-full" alt="Flowbite Logo" />
@@ -81,12 +87,10 @@
 
             <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
                 Selamat Datang Di Desa Kertawangi</h1>
-            <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Nemo officiis modi eligendi vero, a architecto maiores sapiente quas,
-                perspiciatis necessitatibus distinctio facilis, eius odio! Id fugiat eligendi beatae exercitationem
-                nesciunt!
+            <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
+                Sumber Info terbaru desa kertawangi
             </p>
-            <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
+            {{-- <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
                 <a href="#"
                     class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
                     Get started
@@ -100,7 +104,7 @@
                     class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
                     Learn more
                 </a>
-            </div>
+            </div> --}}
         </div>
     </section>
     <style>
@@ -167,7 +171,7 @@
             @foreach ($anggotaOrganisasi as $item)
                 <div class="bg-white rounded-lg shadow-lg">
                     <img src="{{ Storage::url('public/uploads/struktur/' . $item->images) }}" alt="Kepala Desa"
-                        class="w-full h-100 object-contain rounded-t-lg">
+                        class="w-full h-100 object-cover rounded-t-lg">
                     <div class="p-6">
                         <h3 class="mb-2 text-xl font-bold text-gray-900">{{ $item->jabatan }}</h3>
                         <p class="text-gray-700">{{ $item->nama }}</p>
@@ -181,7 +185,7 @@
                     <div class="swiper-slide">
                         <div class="bg-white rounded-lg shadow-lg">
                             <img src="{{ Storage::url('public/uploads/struktur/' . $item->images) }}" alt="Kepala Desa"
-                                class="w-full h-100 object-contain rounded-t-lg">
+                                class="w-full h-100 object-cover rounded-t-lg">
                             <div class="p-6">
                                 <h3 class="mb-2 text-xl font-bold text-gray-900">{{ $item->jabatan }}</h3>
                                 <p class="text-gray-700">{{ $item->nama }}</p>
