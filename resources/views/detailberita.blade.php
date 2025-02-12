@@ -3,7 +3,7 @@
 @section('content')
 
     <head>
-        <title>Detail Berita - Makkela Kela</title>
+        <title>Detail Berita - {{ $berita->judul }}</title>
 
     </head>
     <div class="bg-gray-100 font-sans">
@@ -15,7 +15,7 @@
                 <!-- Konten Artikel -->
                 <div class="p-8">
                     <!-- Judul Artikel -->
-                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Makkela Kela, Pererat Hubungan Antar Warga</h2>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">{{ $berita->judul }}</h2>
 
                     <!-- Metadata Artikel -->
                     <div class="flex items-center text-gray-600 mb-6">
@@ -34,7 +34,7 @@
                     </div>
                     <!-- Gambar Artikel -->
                     <div class="flex justify-center mb-6">
-                        <img src="{{ asset('assets/Teater_JKT48_2023.jpg') }}" alt="Makkela Kela"
+                        <img src="{{ Storage::url('public/uploads/berita/' . $berita->images) }}" alt="Makkela Kela"
                             class="w-full h-100 object-content">
                     </div>
 

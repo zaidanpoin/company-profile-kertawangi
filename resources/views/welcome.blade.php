@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     @vite('resources/css/app.css')
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +20,7 @@
 
     <nav class="bg-white shadow-2xl border-gray-200 ">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="{{ asset('assets/logodesa.png') }}" class="h-12 rounded-full" alt="Flowbite Logo" />
                 <span class="self-center text-2xl font-semibold whitespace-nowrap ">Desa kertawangi</span>
             </a>
@@ -47,7 +48,7 @@
                 <ul
                     class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white ">
                     <li>
-                        <a href="#"
+                        <a href="/"
                             class="block py-2 px-3 text-gray-900 md:hover:text-green-700   rounded-sm md:bg-transparent  md:p-0 md"
                             aria-current="page">Home</a>
                     </li>

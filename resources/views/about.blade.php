@@ -4,7 +4,7 @@
 @section('content')
 
     <head>
-        <title>Tentang Desa Kami</title>
+        <title>Tentang desa kertawangi</title>
     </head>
 
     <body class="bg-gray-100 font-sans">
@@ -39,9 +39,9 @@
                         pengalaman yang tak terlupakan di desa kami.
                     </p>
                     <!-- <a href="#visi-misi"
-                        class="inline-block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition duration-300">
-                        Baca Visi & Misi Kami
-                    </a> -->
+                            class="inline-block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition duration-300">
+                            Baca Visi & Misi Kami
+                        </a> -->
                 </div>
             </div>
 
@@ -73,7 +73,8 @@
                 <div id="struktur-organisasi" class="mt-16">
                     <h2 class="text-3xl font-bold text-green-800 text-center mb-8">Struktur Organisasi Desa</h2>
                     <div class="flex justify-center items-center">
-                        <img src="{{ asset('assets/struktur_pemerintahan.png') }}" alt="Struktur Organisasi Desa" class="rounded-lg shadow-lg">
+                        <img src="{{ asset('assets/struktur_pemerintahan.png') }}" alt="Struktur Organisasi Desa"
+                            class="rounded-lg shadow-lg">
                     </div>
                 </div>
             </div>
