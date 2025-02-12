@@ -9,4 +9,8 @@ use Filament\Resources\Pages\CreateRecord;
 class CreateAnggotaOrganisasi extends CreateRecord
 {
     protected static string $resource = AnggotaOrganisasiResource::class;
+    protected function getRedirectUrl(): string
+    {
+        return $this->getResource()::getUrl('index');
+    }
 }

@@ -11,7 +11,7 @@
         <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
     </head>
     <div class="container mx-auto p-4">
-        <h1 class="text-4xl font-bold text-center mb-4">Peta Wisata</h1>
+        <h1 class="text-4xl font-bold text-center text-green-800 mb-4">Peta Wisata</h1>
 
         <div id="map" class="w-full h-[500px] rounded-lg shadow-md"></div>
 

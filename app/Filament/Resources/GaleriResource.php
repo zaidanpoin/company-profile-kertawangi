@@ -26,27 +26,33 @@ class GaleriResource extends Resource
                 Forms\Components\FileUpload::make('gambar1')
                     ->required()
                     ->image()
-                    ->maxSize(1024),
+                    ->maxSize(51200) // 50 MB
+                    ->disk('galeri'),
                 Forms\Components\FileUpload::make('gambar2')
                     ->required()
                     ->image()
-                    ->maxSize(1024),
+                    ->maxSize(51200) // 50 MB
+                    ->disk('galeri'),
                 Forms\Components\FileUpload::make('gambar3')
                     ->required()
                     ->image()
-                    ->maxSize(1024),
+                    ->maxSize(51200) // 50 MB
+                    ->disk('galeri'),
                 Forms\Components\FileUpload::make('gambar4')
                     ->required()
                     ->image()
-                    ->maxSize(1024),
+                    ->maxSize(51200) // 50 MB
+                    ->disk('galeri'),
                 Forms\Components\FileUpload::make('gambar5')
                     ->required()
                     ->image()
-                    ->maxSize(1024),
+                    ->maxSize(51200) // 50 MB
+                    ->disk('galeri'),
                 Forms\Components\FileUpload::make('gambar6')
                     ->required()
                     ->image()
-                    ->maxSize(1024),
+                    ->maxSize(51200) // 50 MB
+                    ->disk('galeri'),
             ]);
     }
 
@@ -57,27 +63,33 @@ class GaleriResource extends Resource
                 Tables\Columns\ImageColumn::make('gambar1')
                     ->label('Gambar 1')
                     ->sortable()
-                    ->searchable(),
+                    ->searchable()
+                    ->disk('galeri'),
                 Tables\Columns\ImageColumn::make('gambar2')
                     ->label('Gambar 2')
                     ->sortable()
-                    ->searchable(),
+                    ->searchable()
+                    ->disk('galeri'),
                 Tables\Columns\ImageColumn::make('gambar3')
                     ->label('Gambar 3')
                     ->sortable()
-                    ->searchable(),
+                    ->searchable()
+                    ->disk('galeri'),
                 Tables\Columns\ImageColumn::make('gambar4')
                     ->label('Gambar 4')
                     ->sortable()
-                    ->searchable(),
+                    ->searchable()
+                    ->disk('galeri'),
                 Tables\Columns\ImageColumn::make('gambar5')
                     ->label('Gambar 5')
                     ->sortable()
-                    ->searchable(),
+                    ->searchable()
+                    ->disk('galeri'),
                 Tables\Columns\ImageColumn::make('gambar6')
                     ->label('Gambar 6')
                     ->sortable()
-                    ->searchable(),
+                    ->searchable()
+                    ->disk('galeri'),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()
@@ -92,6 +104,29 @@ class GaleriResource extends Resource
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
+                Tables\Actions\DeleteAction::make()->after(function (Galeri $record) {
+                    // delete single
+                    if ($record->gambar1) {
+                        Storage::disk('galeri')->delete($record->gambar1);
+                    }
+                    if ($record->gambar2) {
+                        Storage::disk('galeri')->delete($record->gambar2);
+                    }
+                    if ($record->gambar3) {
+                        Storage::disk('galeri')->delete($record->gambar3);
+                    }
+                    if ($record->gambar4) {
+                        Storage::disk('galeri')->delete($record->gambar4);
+                    }
+                    if ($record->gambar5) {
+                        Storage::disk('galeri')->delete($record->gambar5);
+                    }
+                    if ($record->gambar6) {
+                        Storage::disk('galeri')->delete($record->gambar6);
+                    }
+
+
+                })
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([

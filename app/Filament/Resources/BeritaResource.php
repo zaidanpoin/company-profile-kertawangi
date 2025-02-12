@@ -12,6 +12,8 @@ use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Illuminate\Support\Facades\Storage;
+
 
 class BeritaResource extends Resource
 {
@@ -30,11 +32,11 @@ class BeritaResource extends Resource
                     ->maxLength(255),
                 Forms\Components\Hidden::make('user_id')
                     ->default(auth()->id()),
-                Forms\Components\TextInput::make('content')
-                    ->required()
-                    ->maxLength(255),
+                Forms\Components\RichEditor::make('content')
+                    ->required(),
                 Forms\Components\FileUpload::make('images')
                     ->required()
+                    ->disk('berita')
                   ,
             ]);
     }
@@ -61,6 +63,7 @@ class BeritaResource extends Resource
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
                 Tables\Columns\ImageColumn::make('images')
+                ->disk('berita')
                     ->searchable(),
             ])
             ->filters([
@@ -68,6 +71,20 @@ class BeritaResource extends Resource
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
+                Tables\Actions\DeleteAction::make()->after(function (Berita $record) {
+                    // delete single
+                    if ($record->images) {
+                        Storage::disk('berita')->delete($record->images);
+                    }
+                    // delete multiple
+                    if (is_array($record->images)) {
+                        foreach ($record->images as $image) {
+                            Storage::disk('berita')->delete($image);
+                        }
+                    }
+
+
+                }),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([

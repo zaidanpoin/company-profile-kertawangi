@@ -3,14 +3,14 @@
 
 @section('content')
     <div class="max-w-screen-xl mx-auto p-4 ">
-        <h1 class="text-3xl font-bold mb-4">List Umkm Kertawangi</h1>
+        <h1 class="text-3xl font-bold mb-4 text-green-800">List Umkm Kertawangi</h1>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
 
 
 
             @forelse ($umkm as $data)
                 <div class="bg-white rounded-lg shadow-2xl overflow-hidden">
-                    <img class="w-full h-70 object-cover" src="{{ Storage::url('public/' . $data->thumbnail) }}"
+                    <img class="w-full h-70 object-cover" src="{{ Storage::url('public/uploads/umkm/' . $data->thumbnail) }}"
                         alt="Blog Image">
                     <div class="p-4">
                         <h2 class="text-xl font-semibold mb-2">{{ $data->nama_produk }}-{{ $data->nama_umkm }}</h2>

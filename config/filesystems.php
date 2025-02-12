@@ -43,6 +43,52 @@ return [
             'visibility' => 'public',
             'throw' => false,
         ],
+       'struktur' => [
+
+            'driver' => 'local',
+
+            'root' => storage_path('app/public/uploads/struktur'),
+
+            'url' => env('APP_URL').'/storage/uploads/struktur',
+
+            'visibility' => 'public',
+
+        ],
+        'berita' => [
+
+            'driver' => 'local',
+
+            'root' => storage_path('app/public/uploads/berita'),
+
+            'url' => env('APP_URL').'/storage/uploads/berita',
+
+            'visibility' => 'public',
+
+        ],
+
+        'umkm' => [
+
+            'driver' => 'local',
+
+            'root' => storage_path('app/public/uploads/umkm'),
+
+            'url' => env('APP_URL').'/storage/uploads/umkm',
+
+            'visibility' => 'public',
+
+        ],
+
+        'galeri' => [
+
+            'driver' => 'local',
+
+            'root' => storage_path('app/public/uploads/galeri'),
+
+            'url' => env('APP_URL').'/storage/uploads/galeri',
+
+            'visibility' => 'public',
+
+        ],
 
         's3' => [
             'driver' => 's3',

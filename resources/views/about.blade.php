@@ -4,7 +4,7 @@
 @section('content')
 
     <head>
-        <title>Tentang Desa Kami</title>
+        <title>Tentang desa kertawangi</title>
     </head>
 
     <body class="bg-gray-100 font-sans">
@@ -12,7 +12,7 @@
         <!-- Header Section -->
         <header class="bg-green-700 text-white py-6">
             <div class="container mx-auto text-center">
-                <h1 class="text-4xl font-bold">Tentang Desa Kami</h1>
+                <h1 class="text-4xl font-bold">Tentang Desa Kertawangi</h1>
                 <p class="mt-2 text-lg">Mengenal lebih dekat desa kami yang indah dan penuh keramahan.</p>
             </div>
         </header>
@@ -22,12 +22,12 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Left Column: Image -->
                 <div class="flex justify-center items-center">
-                    <img src="https://via.placeholder.com/500x300" alt="Desa Kami" class="rounded-lg shadow-lg">
+                    <img src="{{ asset('assets/desa.JPG') }}" alt="Desa Kami" class="rounded-lg shadow-lg">
                 </div>
 
                 <!-- Right Column: Description -->
                 <div class="space-y-6">
-                    <h2 class="text-3xl font-bold text-green-800">Selamat Datang di Desa Kami</h2>
+                    <h2 class="text-3xl font-bold text-green-800">Selamat Datang di Desa Kertawangi</h2>
                     <p class="text-gray-700 leading-relaxed">
                         Desa kami terletak di tengah alam yang asri, dikelilingi oleh perbukitan dan sawah hijau yang luas.
                         Kami bangga dengan warisan budaya dan tradisi yang masih terjaga hingga saat ini.
@@ -38,10 +38,10 @@
                         kerajinan tangan, dan pariwisata. Kami mengundang Anda untuk berkunjung dan merasakan
                         pengalaman yang tak terlupakan di desa kami.
                     </p>
-                    <a href="#visi-misi"
-                        class="inline-block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition duration-300">
-                        Baca Visi & Misi Kami
-                    </a>
+                    <!-- <a href="#visi-misi"
+                            class="inline-block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition duration-300">
+                            Baca Visi & Misi Kami
+                        </a> -->
                 </div>
             </div>
 
@@ -67,6 +67,14 @@
                             <li>Membangun infrastruktur yang mendukung pertumbuhan desa.</li>
                             <li>Mendorong partisipasi aktif masyarakat dalam pembangunan desa.</li>
                         </ul>
+                    </div>
+                </div>
+                <!-- Struktur Organisasi Section -->
+                <div id="struktur-organisasi" class="mt-16">
+                    <h2 class="text-3xl font-bold text-green-800 text-center mb-8">Struktur Organisasi Desa</h2>
+                    <div class="flex justify-center items-center">
+                        <img src="{{ asset('assets/struktur_pemerintahan.png') }}" alt="Struktur Organisasi Desa"
+                            class="rounded-lg shadow-lg">
                     </div>
                 </div>
             </div>

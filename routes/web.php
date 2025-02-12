@@ -4,9 +4,11 @@ use Illuminate\Support\Facades\Route;
 use App\Models\AnggotaOrganisasi;
 use App\Models\Administrasi;
 use App\Models\Konten;
+use App\Models\Berita;
 use App\Models\Galeri;
 use App\Models\Umkm;
 use App\Http\Controllers\WisataController;
+use App\Http\Controllers\BeritaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -47,12 +49,17 @@ Route::get('/about', function () {
     return view('about');
 });
 
+
+
+
 Route::get('/berita', function(){
-        return view('berita');
+    $berita = Berita::orderBy('created_at', 'desc')->paginate(6);
+        return view('berita',['berita'=>$berita]);
         });
-Route::get('/detailberita', function(){
-return view('detailberita');
-});
+
+
+
+Route::get('/detailberita/{id}',[BeritaController::class, 'detail']);
 
 
 
