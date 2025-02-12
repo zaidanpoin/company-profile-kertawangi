@@ -2,6 +2,10 @@
 
 
 @section('content')
+
+    <head>
+        <title>Umkm Desa Kertwangi</title>
+    </head>
     <div class="max-w-screen-xl mx-auto p-4 ">
         <h1 class="text-3xl font-bold mb-4 text-green-800">List Umkm Kertawangi</h1>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
