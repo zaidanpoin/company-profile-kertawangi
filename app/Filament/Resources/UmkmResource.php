@@ -94,7 +94,9 @@ class UmkmResource extends Resource
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
                 Tables\Columns\ImageColumn::make('thumbnail')
-                    ->searchable(),
+                    ->searchable()
+                    ->disk('umkm')
+                    ,
 
                 Tables\Columns\TextColumn::make('instagram_url')
 
