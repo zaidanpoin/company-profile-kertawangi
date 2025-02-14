@@ -19,6 +19,7 @@ class AnggotaOrganisasiResource extends Resource
     protected static ?string $model = AnggotaOrganisasi::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-user-group';
+    protected static ?string $navigationLabel = 'Anggota Organisasi';
 
     public static function form(Form $form): Form
     {

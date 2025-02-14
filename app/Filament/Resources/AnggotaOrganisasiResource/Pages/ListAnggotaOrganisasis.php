@@ -9,6 +9,7 @@ use Filament\Resources\Pages\ListRecords;
 class ListAnggotaOrganisasis extends ListRecords
 {
     protected static string $resource = AnggotaOrganisasiResource::class;
+    protected static ?string $title = 'Anggota Organisasi';
 
     protected function getHeaderActions(): array
     {
