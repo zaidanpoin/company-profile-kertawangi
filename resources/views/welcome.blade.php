@@ -12,6 +12,8 @@
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <title>Desa Kertawangi</title>
+
+    <link rel="icon" href="{{ asset('assets/logodesa.png') }}" type="image/jpeg">
 </head>
 
 
@@ -135,9 +137,9 @@
                 class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
                 Tentang Desa
             </a>
-            <a href=""
+            <a href="/about/#visi-misi"
                 class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-200  ">
-                Hubungi Kami
+                Visi & Misi
             </a>
         </div>
     </section>

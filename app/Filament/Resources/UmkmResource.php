@@ -19,7 +19,7 @@ class UmkmResource extends Resource
     protected static ?string $model = Umkm::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-building-storefront';
-    protected static ?string $label = 'UMKM';
+    protected static ?string $navigationLabel = 'UMKM';
 
     public static function form(Form $form): Form
     {

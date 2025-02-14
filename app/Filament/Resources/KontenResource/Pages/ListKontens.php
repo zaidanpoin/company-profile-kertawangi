@@ -9,6 +9,7 @@ use Filament\Resources\Pages\ListRecords;
 class ListKontens extends ListRecords
 {
     protected static string $resource = KontenResource::class;
+    protected static ?string $title = 'Settings';
 
     protected function getHeaderActions(): array
     {
