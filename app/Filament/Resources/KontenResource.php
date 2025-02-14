@@ -27,6 +27,9 @@ class KontenResource extends Resource
                     ->image()
                     ->required()
                     ->directory('uploads/konten'),
+                    Forms\Components\Textarea::make('sub_judul')
+                    ->required()
+                    ->columnSpanFull(),
 
                 Forms\Components\FileUpload::make('gambar_pak_kades')
                     ->image()
@@ -59,6 +62,8 @@ class KontenResource extends Resource
                 Tables\Columns\ImageColumn::make('gambar_depan')
                     ->searchable(),
                 Tables\Columns\ImageColumn::make('gambar_pak_kades')
+                    ->searchable(),
+                    Tables\Columns\TextColumn::make('sub_judul')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('nama_pak_kades')
                     ->searchable(),
