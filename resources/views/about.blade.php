@@ -22,26 +22,22 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Left Column: Image -->
                 <div class="flex justify-center items-center">
-                    <img src="{{ asset('assets/desa.JPG') }}" alt="Desa Kami" class="rounded-lg shadow-lg">
+                    <img src="{{ Storage::url('public/' . $konten[0]['gambar_about']) }}" alt="Desa Kami"
+                        class="rounded-lg shadow-lg w-full h-auto">
                 </div>
 
                 <!-- Right Column: Description -->
                 <div class="space-y-6">
                     <h2 class="text-3xl font-bold text-green-800">Selamat Datang di Desa Kertawangi</h2>
                     <p class="text-gray-700 leading-relaxed">
-                        Desa kami terletak di tengah alam yang asri, dikelilingi oleh perbukitan dan sawah hijau yang luas.
-                        Kami bangga dengan warisan budaya dan tradisi yang masih terjaga hingga saat ini.
-                        Masyarakat desa kami dikenal ramah dan saling membantu, menciptakan lingkungan yang harmonis.
+                        {{ $konten[0]['about'] }}
                     </p>
-                    <p class="text-gray-700 leading-relaxed">
-                        Selain keindahan alam, desa kami juga memiliki berbagai kegiatan ekonomi seperti pertanian,
-                        kerajinan tangan, dan pariwisata. Kami mengundang Anda untuk berkunjung dan merasakan
-                        pengalaman yang tak terlupakan di desa kami.
+                    laman yang tak terlupakan di desa kami.
                     </p>
                     <!-- <a href="#visi-misi"
-                            class="inline-block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition duration-300">
-                            Baca Visi & Misi Kami
-                        </a> -->
+                                                                                                    class="inline-block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition duration-300">
+                                                                                                    Baca Visi & Misi Kami
+                                                                                                </a> -->
                 </div>
             </div>
 
@@ -73,8 +69,8 @@
                 <div id="struktur-organisasi" class="mt-16">
                     <h2 class="text-3xl font-bold text-green-800 text-center mb-8">Struktur Organisasi Desa</h2>
                     <div class="flex justify-center items-center">
-                        <img src="{{ asset('assets/struktur_pemerintahan.png') }}" alt="Struktur Organisasi Desa"
-                            class="rounded-lg shadow-lg">
+                        <img src="{{ Storage::url('public/' . $konten[0]['gambar_struktur']) }}"
+                            alt="Struktur Organisasi Desa" class="rounded-lg shadow-lg">
                     </div>
                 </div>
             </div>

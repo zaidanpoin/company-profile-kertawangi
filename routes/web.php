@@ -46,7 +46,8 @@ Route::get('/umkm', function () {
 Route::get('/wisata', [WisataController::class, 'index']);
 
 Route::get('/about', function () {
-    return view('about');
+    $konten = Konten::take(1)->get()->toArray();
+    return view('about', ['konten' => $konten]);
 });
 
 

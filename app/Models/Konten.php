@@ -13,6 +13,9 @@ class Konten extends Model
         'gambar_pak_kades',
         'nama_pak_kades',
         'kata_sambutan',
+        'gambar_about',
+        'about',
+        'gambar_struktur'
     ];
     protected $table = 'konten';
 

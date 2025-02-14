@@ -27,6 +27,7 @@ class KontenResource extends Resource
                     ->image()
                     ->required()
                     ->directory('uploads/konten'),
+
                 Forms\Components\FileUpload::make('gambar_pak_kades')
                     ->image()
                     ->required()
@@ -37,6 +38,17 @@ class KontenResource extends Resource
                 Forms\Components\Textarea::make('kata_sambutan')
                     ->required()
                     ->columnSpanFull(),
+                    Forms\Components\FileUpload::make('gambar_about')
+                    ->image()
+                    ->required()
+                    ->directory('uploads/konten'),
+                    Forms\Components\FileUpload::make('gambar_struktur')
+                    ->image()
+                    ->required()
+                    ->directory('uploads/konten'),
+                    Forms\Components\TextInput::make('about')
+                    ->required()
+                ,
             ]);
     }
 
@@ -60,6 +72,12 @@ class KontenResource extends Resource
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
+                    Tables\Columns\ImageColumn::make('gambar_about')
+                        ->searchable(),
+                    Tables\Columns\TextColumn::make('about')
+                        ->searchable(),
+                    Tables\Columns\ImageColumn::make('gambar_struktur')
+                        ->searchable(),
             ])
             ->filters([
                 //
