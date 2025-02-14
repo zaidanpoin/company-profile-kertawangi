@@ -24,7 +24,7 @@
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="{{ asset('assets/logodesa.png') }}" class="h-12 rounded-full" alt="Flowbite Logo" />
-                <span class="self-center text-2xl font-semibold whitespace-nowrap ">Desa kertawangi</span>
+                <span class="self-center text-2xl font-semibold whitespace-nowrap text-green-800 ">Desa kertawangi</span>
             </a>
             <button data-collapse-toggle="navbar-default" type="button"
                 class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
@@ -125,7 +125,7 @@
         }
     </style>
     <section class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
-        <h2 class="mb-4 text-3xl font-extrabold tracking-tight leading-tight text-gray-900 md:text-4xl">
+        <h2 class="mb-4 text-3xl font-extrabold tracking-tight leading-tight text-gray-900 md:text-4xl text-green-800">
             Tentang Desa Kertawangi</h2>
         <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
             Desa Kertawangi adalah sebuah desa yang terletak di kaki Gunung Tangkuban Perahu. Desa ini dikenal dengan
@@ -134,7 +134,7 @@
         </p>
         <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
             <a href="/about"
-                class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-green-800 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
                 Tentang Desa
             </a>
             <a href="/about/#visi-misi"
@@ -152,7 +152,7 @@
                     alt="Logo Desa Kertawangi" />
             </div>
             <div class="lg:w-2/3 mb-8 lg:mb-0">
-                <h2 class="mb-4 text-3xl font-extrabold tracking-tight leading-tight text-gray-900 md:text-4xl">
+                <h2 class="mb-4 text-3xl font-extrabold tracking-tight leading-tight text-gray-900 md:text-4xl text-green-800">
                     Sambutan Kepala Desa</h2>
 
                 <p class=" text-2xl font-semibold text-gray-900 ">{{ $konten[0]['nama_pak_kades'] }}</p>
@@ -174,7 +174,7 @@
     {{-- struktu --}}
 
     <section class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-12 ">
-        <h2 class="mb-4 text-3xl font-extrabold test tracking-tight leading-tight text-gray-900 md:text-4xl">
+        <h2 class="mb-4 text-3xl font-extrabold test tracking-tight leading-tight text-gray-900 md:text-4xl text-green-800">
             Struktur Organisasi Desa Kertawangi</h2>
 
         <div class="md:grid md:gap-8 lg:grid-cols-3 hidden md:block">
@@ -239,12 +239,12 @@
 
     {{-- end struktur --}}
     {{-- admintiastari --}}
-    <section class="bg-gray-900">
+    <section class="bg-green-800">
         <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
             <h2 class="mb-4 text-3xl font-extrabold tracking-tight leading-tight text-white md:text-4xl">
                 Administrasi Penduduk
             </h2>
-            <p class="mb-8 text-lg font-normal text-gray-400 lg:text-xl">
+            <p class="mb-8 text-lg font-normal text-white lg:text-xl">
                 Administrasi penduduk Desa Kertawangi mencakup berbagai layanan seperti pendaftaran penduduk, pencatatan
                 sipil, dan pengelolaan data kependudukan. Kami berkomitmen untuk memberikan pelayanan terbaik bagi
                 masyarakat desa.
@@ -254,32 +254,32 @@
                 <div class="flex flex-col items-center justify-center">
                     <dt class="mb-2 text-3xl md:text-4xl counter font-extrabold"
                         data-target="{{ $administrasi[0]['penduduk'] }}">0</dt>
-                    <dd class="font-light text-gray-400">Penduduk</dd>
+                    <dd class="font-light text-white">Penduduk</dd>
                 </div>
                 <div class="flex flex-col items-center justify-center">
                     <dt class="mb-2 text-3xl md:text-4xl counter font-extrabold"
                         data-target="{{ $administrasi[0]['kepala_keluarga'] }}">0</dt>
-                    <dd class="font-light text-gray-400">Kepala Keluarga</dd>
+                    <dd class="font-light text-white">Kepala Keluarga</dd>
                 </div>
                 <div class="flex flex-col items-center justify-center">
                     <dt class="mb-2 text-3xl md:text-4xl counter font-extrabold"
                         data-target="{{ $administrasi[0]['penduduk_sementara'] }}">0</dt>
-                    <dd class="font-light text-gray-400">Penduduk Sementara</dd>
+                    <dd class="font-light text-white">Penduduk Sementara</dd>
                 </div>
                 <div class="flex flex-col items-center justify-center">
                     <dt class="mb-2 text-3xl md:text-4xl counter font-extrabold"
                         data-target="{{ $administrasi[0]['laki_laki'] }}">0</dt>
-                    <dd class="font-light text-gray-400">Laki-laki</dd>
+                    <dd class="font-light text-white">Laki-laki</dd>
                 </div>
                 <div class="flex flex-col items-center justify-center">
                     <dt class="mb-2 text-3xl md:text-4xl counter font-extrabold"
                         data-target="{{ $administrasi[0]['perempuan'] }}">0</dt>
-                    <dd class="font-light text-gray-400">Perempuan</dd>
+                    <dd class="font-light text-white">Perempuan</dd>
                 </div>
                 <div class="flex flex-col items-center justify-center">
                     <dt class="mb-2 text-3xl md:text-4xl counter font-extrabold"
                         data-target="{{ $administrasi[0]['mutasi_penduduk'] }}">0</dt>
-                    <dd class="font-light text-gray-400">Mutasi Penduduk</dd>
+                    <dd class="font-light text-white">Mutasi Penduduk</dd>
                 </div>
             </dl>
         </div>
@@ -291,7 +291,7 @@
     {{-- galery --}}
     <section class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-12">
         <div class="container mx-auto">
-            <h1 class="text-3xl font-bold text-center mt-10 mb-5">GALERI DESA</h1>
+            <h1 class="text-3xl font-bold text-center mt-10 mb-5 text-green-800">GALERI DESA</h1>
             <p class="text-center mb-10">Menampilkan kegiatan-kegiatan yang berlangsung di desa</p>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -373,7 +373,7 @@
     </script>
 
     <section class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-12">
-        <h2 class="mb-4 text-3xl font-extrabold tracking-tight leading-tight text-gray-900 md:text-4xl">
+        <h2 class="mb-4 text-3xl font-extrabold tracking-tight leading-tight text-gray-900 md:text-4xl text-green-800">
             Peta Desa Kertawangi</h2>
 
         <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl">
