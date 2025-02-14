@@ -24,7 +24,8 @@
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="{{ asset('assets/logodesa.png') }}" class="h-12 rounded-full" alt="Flowbite Logo" />
-                <span class="self-center text-2xl font-semibold whitespace-nowrap text-green-800 ">Desa kertawangi</span>
+                <span class="self-center text-2xl font-semibold whitespace-nowrap text-green-800 ">Desa
+                    kertawangi</span>
             </a>
             <button data-collapse-toggle="navbar-default" type="button"
                 class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
@@ -128,7 +129,7 @@
         <h2 class="mb-4 text-3xl font-extrabold tracking-tight leading-tight text-gray-900 md:text-4xl text-green-800">
             Tentang Desa Kertawangi</h2>
         <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
-            Desa Kertawangi adalah sebuah desa yang terletak di kaki Gunung Tangkuban Perahu. Desa ini dikenal dengan
+            Desa Kertawangi adalah sebuah desa yang terletak di kaki Gunung Burangrang. Desa ini dikenal dengan
             keindahan alamnya yang mempesona dan udara yang sejuk. Masyarakat desa ini hidup dengan damai dan saling
             membantu satu sama lain.
         </p>
@@ -148,11 +149,12 @@
     <section class="py-8     px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-12">
         <div class="flex flex-col lg:flex-row items-center justify-between">
             <div class="lg:w-2/3 flex ">
-                <img src="https://asset-2.tstatic.net/jabar/foto/bank/images/steve-ewon-kades.jpg" class="h-100 w-100"
+                <img src="{{ Storage::url('public/' . $konten[0]['gambar_pak_kades']) }}" class="h-100 w-100"
                     alt="Logo Desa Kertawangi" />
             </div>
             <div class="lg:w-2/3 mb-8 lg:mb-0">
-                <h2 class="mb-4 text-3xl font-extrabold tracking-tight leading-tight text-gray-900 md:text-4xl text-green-800">
+                <h2
+                    class="mb-4 text-3xl font-extrabold tracking-tight leading-tight text-gray-900 md:text-4xl text-green-800">
                     Sambutan Kepala Desa</h2>
 
                 <p class=" text-2xl font-semibold text-gray-900 ">{{ $konten[0]['nama_pak_kades'] }}</p>
@@ -174,7 +176,8 @@
     {{-- struktu --}}
 
     <section class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-12 ">
-        <h2 class="mb-4 text-3xl font-extrabold test tracking-tight leading-tight text-gray-900 md:text-4xl text-green-800">
+        <h2
+            class="mb-4 text-3xl font-extrabold test tracking-tight leading-tight text-gray-900 md:text-4xl text-green-800">
             Struktur Organisasi Desa Kertawangi</h2>
 
         <div class="md:grid md:gap-8 lg:grid-cols-3 hidden md:block">
