@@ -19,7 +19,7 @@ class UmkmResource extends Resource
     protected static ?string $model = Umkm::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-building-storefront';
-    protected static ?string $label = 'UMKM';
+    protected static ?string $navigationLabel = 'UMKM';
 
     public static function form(Form $form): Form
     {
@@ -94,7 +94,9 @@ class UmkmResource extends Resource
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
                 Tables\Columns\ImageColumn::make('thumbnail')
-                    ->searchable(),
+                    ->searchable()
+                    ->disk('umkm')
+                    ,
 
                 Tables\Columns\TextColumn::make('instagram_url')
 

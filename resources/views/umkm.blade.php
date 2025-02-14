@@ -26,22 +26,19 @@
                             <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo"
                                 class="inline h-7 w-7">
                         </a>
-                        <a href="https://shopee.co.id/{{ $data->shopee_url }}"
-                            class="text-orange-500 hover:underline mt-2 inline-block">
+                        <a href="{{ $data->shopee_url }}" class="text-orange-500 hover:underline mt-2 inline-block">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Shopee_logo.svg/1442px-Shopee_logo.svg.png"
                                 alt="Shopee Logo" class="inline h-7 w-7">
                         </a>
-                        <a href="https://www.tokopedia.com/{{ $data->tokopedia_url }}"
-                            class="text-green-500 hover:underline mt-2 inline-block">
+                        <a href="{{ $data->tokopedia_url }}" class="text-green-500 hover:underline mt-2 inline-block">
                             <img src="https://w7.pngwing.com/pngs/741/278/png-transparent-tokopedia-android-online-shopping-android-shopping-mall-owl-bird-thumbnail.png"
                                 alt="Tokopedia Logo" class="inline h-7 w-7">
                         </a>
-                        <a href="https://instagram.com/{{ $data->instagram_url }}"
-                            class="text-pink-500 hover:underline mt-2 inline-block">
+                        <a href="{{ $data->instagram_url }}" class="text-pink-500 hover:underline mt-2 inline-block">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
                                 alt="Instagram Logo" class="inline h-7 w-7">
                         </a>
-                        <a href="https://tiktok.com/@yourusername" class="text-black hover:underline mt-2 inline-block">
+                        <a href="{{ $data->tiktok_url }}" class="text-black hover:underline mt-2 inline-block">
                             <img src="https://i.pinimg.com/originals/0b/db/be/0bdbbef30f3d9833eb35f3befadd4b27.png"
                                 alt="TikTok Logo" class="inline h-7 w-7">
                         </a>

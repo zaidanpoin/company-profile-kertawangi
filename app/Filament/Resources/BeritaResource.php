@@ -20,6 +20,7 @@ class BeritaResource extends Resource
     protected static ?string $model = Berita::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-newspaper';
+    protected static ?string $navigationLabel = 'Berita';
 
     public static function form(Form $form): Form
     {
@@ -28,8 +29,7 @@ class BeritaResource extends Resource
                 Forms\Components\TextInput::make('judul')
                     ->required()
                     ->maxLength(255),
-                Forms\Components\TextInput::make('slug')
-                    ->maxLength(255),
+
                 Forms\Components\Hidden::make('user_id')
                     ->default(auth()->id()),
                 Forms\Components\RichEditor::make('content')
@@ -47,8 +47,7 @@ class BeritaResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('judul')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('slug')
-                    ->searchable(),
+
                 Tables\Columns\TextColumn::make('user.name')
                     ->numeric()
                     ->sortable(),
