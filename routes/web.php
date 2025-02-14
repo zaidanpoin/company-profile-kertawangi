@@ -22,7 +22,7 @@ use App\Http\Controllers\BeritaController;
 */
 
 Route::get('/', function () {
-    $anggotaOrganisasi = AnggotaOrganisasi::take(10)->get();
+    $anggotaOrganisasi = AnggotaOrganisasi::take(100)->get();
     $administrasi = Administrasi::take(1)->get()->toArray();
     $galeri = Galeri::take(1)->get()->toArray();
     $konten = Konten::take(1)->get()->toArray();

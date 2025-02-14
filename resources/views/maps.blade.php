@@ -36,23 +36,7 @@
         }).addTo(map);
 
         // Polygon Wilayah Desa Kertawangi (disesuaikan dengan peta referensi)
-        var kertawangiCoords = [
-            [-6.815200, 107.565600], // Titik 1
-            [-6.812500, 107.572800], // Titik 2
-            [-6.807800, 107.576500], // Titik 3
-            [-6.802600, 107.579700], // Titik 4
-            [-6.798300, 107.577100], // Titik 5
-            [-6.796800, 107.570500], // Titik 6
-            [-6.800500, 107.564800], // Titik 7
-            [-6.807200, 107.561500], // Titik 8
-            [-6.813000, 107.562500] // Titik 9 (Kembali ke awal)
-        ];
 
-        var kertawangiPolygon = L.polygon(kertawangiCoords, {
-            color: 'red', // Warna garis
-            weight: 2, // Ketebalan garis
-            fillOpacity: 0 // Transparansi area dalam
-        }).addTo(map).bindPopup("Wilayah Desa Kertawangi");
 
         // Data wisata (pastikan formatnya benar dalam database)
         var wisataData = @json($wisatas);
