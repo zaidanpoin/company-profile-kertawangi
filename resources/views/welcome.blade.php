@@ -93,6 +93,7 @@
                     {{ $konten[0]['sub_judul'] }}
                 </p>
             </div>
+            {{-- konten --}}
         </div>
     </div>
 
