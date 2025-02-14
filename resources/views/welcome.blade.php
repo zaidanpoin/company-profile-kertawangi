@@ -90,7 +90,7 @@
                     Selamat Datang Di Desa Kertawangi
                 </h1>
                 <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
-                    Sumber Info terbaru desa kertawangi
+                    {{ $konten[0]['sub_judul'] }}
                 </p>
             </div>
         </div>
